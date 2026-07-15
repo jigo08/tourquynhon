@@ -1,0 +1,42 @@
+﻿[
+    {
+        "name":  "ky-co",
+        "local":  "assets/photos/ky-co.jpg",
+        "source_file":  "Ky Co beach, Quy Nhon city, Binh Dinh province, Vietnam.jpg",
+        "source_page":  "https://commons.wikimedia.org/wiki/File:Ky%20Co%20beach%2C%20Quy%20Nhon%20city%2C%20Binh%20Dinh%20province%2C%20Vietnam.jpg",
+        "author":  "Lê Hồ Bắc",
+        "license":  "CC BY-SA 4.0"
+    },
+    {
+        "name":  "eo-gio",
+        "local":  "assets/photos/eo-gio.jpg",
+        "source_file":  "Eo Gió - Nhơn Lý.jpg",
+        "source_page":  "https://commons.wikimedia.org/wiki/File:Eo%20Gi%C3%B3%20-%20Nh%C6%A1n%20L%C3%BD.jpg",
+        "author":  "Hưng Hồ Bá",
+        "license":  "CC BY 2.0"
+    },
+    {
+        "name":  "hon-kho",
+        "local":  "assets/photos/hon-kho.jpg",
+        "source_file":  "Nhơn Hải, Quy Nhơn - 33275233023.jpg",
+        "source_page":  "https://commons.wikimedia.org/wiki/File:Nh%C6%A1n%20H%E1%BA%A3i%2C%20Quy%20Nh%C6%A1n%20-%2033275233023.jpg",
+        "author":  "Trường Sơn",
+        "license":  "CC0"
+    },
+    {
+        "name":  "thap-doi",
+        "local":  "assets/photos/thap-doi.jpg",
+        "source_file":  "Tháp Đôi, Quy Nhơn - 43083336701.jpg",
+        "source_page":  "https://commons.wikimedia.org/wiki/File:Th%C3%A1p%20%C4%90%C3%B4i%2C%20Quy%20Nh%C6%A1n%20-%2043083336701.jpg",
+        "author":  "Minh Khiem",
+        "license":  "CC0"
+    },
+    {
+        "name":  "trung-luong",
+        "local":  "assets/photos/trung-luong.jpg",
+        "source_file":  "Quy Nhon Beach Phuong Mai Peninsula.jpg",
+        "source_page":  "https://commons.wikimedia.org/wiki/File:Quy%20Nhon%20Beach%20Phuong%20Mai%20Peninsula.jpg",
+        "author":  "VeeWin",
+        "license":  "CC BY-SA 4.0"
+    }
+]

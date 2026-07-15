@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QNT:Quy Nhơn Tour | Tour Quy Nhơn Biển Đảo</title>
+  <meta name="description" content="QNT:Quy Nhơn Tour tư vấn tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn với lịch trình gọn, xe đưa đón và hotline hỗ trợ nhanh.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0077B6">
+  <link rel="canonical" href="https://qntquynhontour.vn/">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QNT:Quy Nhơn Tour">
+  <meta property="og:title" content="QNT:Quy Nhơn Tour | Tour Quy Nhơn biển đảo">
+  <meta property="og:description" content="Tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn. Tư vấn nhanh qua hotline 0772334449.">
+  <meta property="og:url" content="https://qntquynhontour.vn/">
+  <meta property="og:image" content="https://qntquynhontour.vn/assets/og-preview.png">
+  <meta property="og:image:secure_url" content="https://qntquynhontour.vn/assets/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QNT:Quy Nhơn Tour - tour Quy Nhơn biển đảo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QNT:Quy Nhơn Tour | Tour Quy Nhơn biển đảo">
+  <meta name="twitter:description" content="Tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn. Tư vấn nhanh qua hotline 0772334449.">
+  <meta name="twitter:image" content="https://qntquynhontour.vn/assets/og-preview.png">
+  <link rel="preload" as="image" href="assets/photos/ky-co.jpg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+    :root {
+      --blue: #0077B6;
+      --teal: #2A9D8F;
+      --mint: #00A896;
+      --gold: #E9C46A;
+      --cream: #F2E8C9;
+      --sky: #A2D2FF;
+      --white: #FFFFFF;
+      --ink: #0077B6;
+      --text: #0077B6;
+      --muted: #2A9D8F;
+      --line: rgba(0, 119, 182, .16);
+      --soft: rgba(242, 232, 201, .48);
+      --shadow: 0 22px 60px rgba(0, 119, 182, .14);
+      --radius: 8px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      min-width: 320px;
+      color: var(--text);
+      background: var(--white);
+      font-family: Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+    .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blue), var(--mint));
+      box-shadow: 0 12px 28px rgba(0, 119, 182, .22);
+    }
+    .brand small {
+      display: block;
+      margin-top: -3px;
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 850;
+    }
+    .nav-links a { position: relative; }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 2px;
+      background: var(--mint);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .18s ease;
+    }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--blue);
+      background: var(--white);
+      font-size: 24px;
+      line-height: 1;
+    }
+    .mobile-menu {
+      display: none;
+      padding: 10px 0 18px;
+      border-top: 1px solid var(--line);
+    }
+    .mobile-menu.open { display: grid; gap: 6px; }
+    .mobile-menu a {
+      padding: 11px 0;
+      color: var(--ink);
+      font-weight: 850;
+      border-bottom: 1px solid var(--line);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--mint);
+      font-weight: 900;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      box-shadow: 0 12px 30px rgba(0, 168, 150, .22);
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); background: var(--teal); }
+    .btn-outline {
+      color: var(--blue);
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+    .btn-outline:hover { color: var(--white); background: var(--blue); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: var(--white);
+      background:
+        linear-gradient(110deg, rgba(0, 119, 182, .88), rgba(42, 157, 143, .62) 52%, rgba(0, 168, 150, .24)),
+        linear-gradient(0deg, rgba(0, 119, 182, .52), rgba(0, 119, 182, .08) 48%),
+        url("assets/photos/ky-co.jpg") center / cover no-repeat;
+    }
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+    .hero::before {
+      width: 740px;
+      height: 740px;
+      right: -260px;
+      top: 60px;
+      border-radius: 50%;
+      border: 90px solid rgba(255, 255, 255, .12);
+    }
+    .hero::after {
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 128px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .2) 38%),
+        var(--white);
+      clip-path: polygon(0 48%, 100% 16%, 100% 100%, 0 100%);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      min-height: 680px;
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(360px, .72fr);
+      gap: 36px;
+      align-items: center;
+      padding: 72px 0 116px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, .32);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .14);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 760px;
+      margin: 18px 0;
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: 1.03;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 640px;
+      color: rgba(255, 255, 255, .9);
+      font-size: clamp(16px, 2vw, 20px);
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .hero-card {
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 16px;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .16);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 30px 90px rgba(15, 37, 64, .22);
+    }
+    .hero-card h2 {
+      color: var(--white);
+      font-size: 28px;
+      line-height: 1.16;
+    }
+    .hero-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .hero-mini {
+      padding: 16px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .92);
+      color: var(--ink);
+    }
+    .hero-mini strong {
+      display: block;
+      color: var(--blue);
+      font-size: 28px;
+      line-height: 1;
+    }
+    .hero-mini span {
+      display: block;
+      margin-top: 8px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    section {
+      padding: clamp(64px, 8vw, 104px) 0;
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 760px;
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(280px, .58fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+    .section-kicker {
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h2 {
+      color: var(--ink);
+      font-size: clamp(28px, 4.2vw, 48px);
+      line-height: 1.14;
+      font-weight: 950;
+    }
+    .section-head p { color: var(--muted); }
+
+    .feature-strip {
+      background: linear-gradient(180deg, var(--white), rgba(162, 210, 255, .22));
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .feature-card,
+    .tour-card,
+    .planner-card,
+    .include,
+    .contact-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 14px 38px rgba(0, 119, 182, .08);
+    }
+    .feature-card {
+      padding: 22px;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--blue);
+      font-weight: 950;
+    }
+    .feature-card:nth-child(2) .feature-icon { background: var(--teal); }
+    .feature-card:nth-child(3) .feature-icon { color: var(--ink); background: var(--gold); }
+    .feature-card:nth-child(4) .feature-icon { color: var(--ink); background: var(--sky); }
+    .feature-card h3 { color: var(--ink); font-size: 18px; line-height: 1.3; margin-bottom: 8px; }
+    .feature-card p { color: var(--muted); font-size: 14px; }
+
+    .planner {
+      background:
+        linear-gradient(135deg, rgba(242, 232, 201, .68), rgba(162, 210, 255, .28)),
+        var(--white);
+    }
+    .planner-layout {
+      display: grid;
+      grid-template-columns: .86fr 1.14fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .planner-card { padding: 26px; }
+    .planner-card h3 {
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.24;
+      margin-bottom: 14px;
+    }
+    .planner-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+      list-style: none;
+    }
+    .planner-list li {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: var(--muted);
+    }
+    .planner-list b {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--blue);
+    }
+
+    .tour-toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .tour-filter {
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--blue);
+      background: var(--white);
+      font-weight: 900;
+    }
+    .tour-filter.active {
+      color: var(--white);
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+    .tour-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .tour-card { overflow: hidden; }
+    .tour-photo {
+      min-height: 220px;
+      display: grid;
+      align-content: end;
+      padding: 18px;
+      color: var(--white);
+      background: var(--tile-bg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      isolation: isolate;
+    }
+    .tour-photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(0deg, rgba(15,37,64,.68), transparent 62%);
+    }
+    .tour-photo strong { font-size: 26px; line-height: 1.1; }
+    .tour-body { padding: 20px; }
+    .tour-tag {
+      display: inline-flex;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: var(--blue);
+      background: rgba(162, 210, 255, .28);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+    .tour-card h3 { color: var(--ink); font-size: 21px; line-height: 1.25; margin-bottom: 8px; }
+    .tour-card p { color: var(--muted); font-size: 14px; }
+    .tour-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .tour-meta span {
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: var(--white);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .gallery {
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: var(--white);
+    }
+    .gallery h2 { color: var(--white); }
+    .gallery .section-kicker { color: var(--gold); }
+    .gallery .section-head p { color: rgba(255, 255, 255, .78); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 176px;
+      gap: 12px;
+    }
+    .gallery-item {
+      position: relative;
+      display: grid;
+      align-content: end;
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      padding: 18px;
+      border: 0;
+      border-radius: var(--radius);
+      color: var(--white);
+      text-align: left;
+      background: var(--tile-bg);
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 -90px 90px rgba(15, 37, 64, .54);
+      transition: transform .18s ease, filter .18s ease;
+    }
+    .gallery-item:hover { transform: translateY(-4px); filter: saturate(1.08); }
+    .gallery-item.large { grid-column: span 6; grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 4; }
+    .gallery-item.small { grid-column: span 2; }
+    .gallery-item.mid { grid-column: span 3; }
+    .gallery-item strong { font-size: 22px; line-height: 1.1; }
+    .gallery-item span { color: rgba(255,255,255,.86); font-size: 13px; font-weight: 800; }
+
+    .itinerary { background: rgba(162, 210, 255, .18); }
+    .timeline { display: grid; gap: 12px; }
+    .accordion {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 32px rgba(0, 119, 182, .07);
+    }
+    .accordion-toggle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 92px 1fr 42px;
+      gap: 16px;
+      align-items: center;
+      padding: 16px 20px;
+      border: 0;
+      color: var(--ink);
+      background: var(--white);
+      text-align: left;
+    }
+    .accordion-toggle b {
+      display: grid;
+      place-items: center;
+      min-height: 72px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--blue);
+      font-size: 30px;
+      line-height: 1;
+    }
+    .accordion:nth-child(2) .accordion-toggle b { background: var(--teal); }
+    .accordion:nth-child(3) .accordion-toggle b { color: var(--ink); background: var(--gold); }
+    .accordion-toggle strong { display: block; font-size: 20px; line-height: 1.25; }
+    .accordion-toggle span { color: var(--muted); font-size: 14px; }
+    .accordion-icon { justify-self: end; color: var(--blue); font-size: 28px; }
+    .accordion-panel {
+      display: none;
+      grid-template-columns: 1fr 280px;
+      gap: 18px;
+      padding: 0 20px 20px 128px;
+    }
+    .accordion.open .accordion-panel { display: grid; }
+    .accordion-panel ul {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      list-style: none;
+    }
+    .accordion-panel li::before { content: "✓"; color: var(--mint); font-weight: 950; margin-right: 8px; }
+    .mini-photo {
+      min-height: 160px;
+      border-radius: var(--radius);
+      background: var(--tile-bg);
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 -70px 70px rgba(15,37,64,.42);
+    }
+
+    .price-section { background: var(--white); }
+    .pricing-wrap {
+      display: grid;
+      grid-template-columns: .88fr 1.12fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .price-card {
+      min-height: 100%;
+      padding: 32px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blue), var(--mint));
+      box-shadow: var(--shadow);
+    }
+    .price-card h2 { color: var(--white); }
+    .price {
+      margin: 18px 0 8px;
+      color: var(--gold);
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1;
+      font-weight: 950;
+    }
+    .price-card p { color: rgba(255, 255, 255, .82); }
+    .price-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .include { padding: 18px; }
+    .include strong { display: block; color: var(--ink); margin-bottom: 6px; }
+    .include span { color: var(--muted); font-size: 14px; }
+
+    .contact {
+      background: linear-gradient(135deg, rgba(0, 119, 182, .94), rgba(42, 157, 143, .9));
+    }
+    .contact-shell {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      padding: 36px;
+      border-radius: 18px;
+      background: var(--white);
+      box-shadow: 0 28px 80px rgba(15, 37, 64, .24);
+    }
+    .form-section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 12px;
+      margin: 12px 0 16px;
+      border-bottom: 1px solid rgba(42, 157, 143, .28);
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 18px;
+    }
+    .field { display: grid; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    label {
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+    }
+    label span { color: var(--mint); }
+    input, select, textarea {
+      width: 100%;
+      min-height: 44px;
+      padding: 12px 14px;
+      border: 1px solid rgba(101, 121, 141, .24);
+      border-radius: var(--radius);
+      color: var(--ink);
+      background: var(--white);
+      outline: none;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--mint);
+      box-shadow: 0 0 0 4px rgba(0, 168, 150, .12);
+    }
+    textarea { min-height: 96px; resize: vertical; }
+    .interest-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .interest {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+    .interest input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+    }
+    .interest span {
+      min-width: 126px;
+      padding: 8px 14px;
+      border: 1px solid rgba(101, 121, 141, .24);
+      border-radius: 999px;
+      color: var(--ink);
+      background: var(--white);
+      text-align: center;
+      font-size: 13px;
+      font-weight: 850;
+      transition: background .18s ease, color .18s ease, border-color .18s ease;
+    }
+    .interest input:checked + span {
+      color: var(--white);
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+    .form-submit {
+      width: 100%;
+      min-height: 52px;
+      margin-top: 10px;
+      border-radius: 999px;
+      background: var(--mint);
+      box-shadow: 0 16px 34px rgba(0, 168, 150, .24);
+    }
+    .form-note { margin-top: 8px; color: var(--muted); font-size: 12px; text-align: center; }
+
+    .footer {
+      padding: 42px 0;
+      color: rgba(255, 255, 255, .82);
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      font-size: 14px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.45fr .8fr .8fr 1fr;
+      gap: 42px;
+      align-items: start;
+    }
+    .footer-logo {
+      width: 58px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 14px;
+      border-radius: var(--radius);
+      color: var(--blue);
+      background: var(--white);
+      font-weight: 950;
+    }
+    .footer h3 {
+      margin-bottom: 16px;
+      color: var(--white);
+      font-size: 15px;
+      line-height: 1.3;
+    }
+    .footer ul { display: grid; gap: 9px; list-style: none; }
+    .footer a:hover { color: var(--gold); }
+    .socials { display: flex; gap: 10px; margin-top: 16px; }
+    .socials a {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 950;
+    }
+    .contact-lines strong { color: var(--white); }
+    .contact-lines a { color: var(--gold); font-weight: 850; }
+    .photo-credit {
+      grid-column: 1 / -1;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, .18);
+      font-size: 12px;
+    }
+    .photo-credit a { color: var(--gold); font-weight: 850; }
+
+    .float-actions {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 70;
+      display: grid;
+      gap: 12px;
+    }
+    .float-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 172px;
+      min-height: 58px;
+      padding: 10px 18px 10px 10px;
+      border-radius: 999px;
+      color: var(--ink);
+      background: var(--white);
+      font-size: 18px;
+      font-weight: 950;
+      box-shadow: 0 12px 36px rgba(15, 37, 64, .22);
+    }
+    .float-btn.zalo { color: var(--white); background: #0077B6; }
+    .float-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(162, 210, 255, .32);
+      font-size: 18px;
+    }
+    .float-btn.zalo .float-icon { background: rgba(255, 255, 255, .18); }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: none;
+      place-items: center;
+      padding: 24px;
+      background: rgba(15, 37, 64, .82);
+    }
+    .lightbox.open { display: grid; }
+    .lightbox-stage {
+      position: relative;
+      width: min(980px, 100%);
+      min-height: min(72vh, 620px);
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      padding: 34px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--tile-bg);
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 30px 90px rgba(0,0,0,.32), inset 0 -140px 120px rgba(15,37,64,.62);
+    }
+    .lightbox-title { font-size: clamp(28px, 5vw, 54px); line-height: 1.08; font-weight: 950; }
+    .lightbox-desc { max-width: 620px; color: rgba(255,255,255,.86); }
+    .lightbox-close,
+    .lightbox-nav {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      color: var(--ink);
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 10px 30px rgba(15,37,64,.22);
+    }
+    .lightbox-close { top: 16px; right: 16px; width: 42px; height: 42px; font-size: 24px; }
+    .lightbox-nav { top: 50%; width: 48px; height: 48px; transform: translateY(-50%); font-size: 28px; }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+
+    .tile-kyco { --tile-bg: linear-gradient(140deg, rgba(0,119,182,.28), rgba(0,168,150,.16)), url("assets/photos/ky-co.jpg"); }
+    .tile-eogio { --tile-bg: linear-gradient(140deg, rgba(0,119,182,.18), rgba(42,157,143,.22)), url("assets/photos/eo-gio.jpg"); }
+    .tile-honkh { --tile-bg: linear-gradient(140deg, rgba(0,168,150,.2), rgba(0,119,182,.2)), url("assets/photos/hon-kho.jpg"); }
+    .tile-thapdoi { --tile-bg: linear-gradient(140deg, rgba(0,119,182,.18), rgba(42,157,143,.18)), url("assets/photos/thap-doi.jpg"); }
+    .tile-trungluong { --tile-bg: linear-gradient(140deg, rgba(0,119,182,.2), rgba(0,168,150,.16)), url("assets/photos/trung-luong.jpg"); }
+
+    @media (max-width: 980px) {
+      .nav-links, .nav .btn { display: none; }
+      .menu-btn { display: grid; place-items: center; }
+      .hero-grid,
+      .section-head,
+      .planner-layout,
+      .pricing-wrap,
+      .footer-grid { grid-template-columns: 1fr; }
+      .feature-grid, .tour-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-auto-rows: 160px; }
+      .gallery-item.large, .gallery-item.wide, .gallery-item.small, .gallery-item.mid { grid-column: span 6; }
+      .accordion-panel { grid-template-columns: 1fr; padding-left: 20px; }
+    }
+    @media (max-width: 680px) {
+      .brand { font-size: 14px; }
+      .brand-mark { width: 38px; height: 38px; }
+      .hero-grid { min-height: auto; padding: 56px 0 96px; }
+      .hero-actions .btn { width: 100%; }
+      .hero-mini-grid,
+      .feature-grid,
+      .tour-grid,
+      .price-list,
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .contact-shell { padding: 24px 18px; border-radius: 14px; }
+      .gallery-item.large, .gallery-item.wide, .gallery-item.small, .gallery-item.mid { grid-column: span 12; }
+      .accordion-toggle { grid-template-columns: 72px 1fr 28px; padding: 14px; }
+      .accordion-toggle b { min-height: 62px; }
+      .accordion-panel { padding: 0 14px 16px; }
+      .footer { padding-bottom: 148px; }
+      .float-actions { left: 12px; bottom: 12px; }
+      .float-btn { min-width: 146px; min-height: 52px; font-size: 16px; }
+      .lightbox { padding: 14px; }
+      .lightbox-stage { min-height: 68vh; padding: 22px; }
+      .lightbox-nav { width: 42px; height: 42px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="brand" aria-label="QNT:Quy Nhơn Tour">
+          <span class="brand-mark">QNT</span>
+          <span>QNT:Quy Nhơn Tour<small>Local travel specialist</small></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#tour">Tour nổi bật</a></li>
+          <li><a href="#planner">Gợi ý lịch trình</a></li>
+          <li><a href="#gallery">Điểm đến</a></li>
+          <li><a href="#price">Bảng giá</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <a class="btn" href="#contact">Nhận báo giá</a>
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#tour">Tour nổi bật</a>
+        <a href="#planner">Gợi ý lịch trình</a>
+        <a href="#gallery">Điểm đến</a>
+        <a href="#price">Bảng giá</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Tour biển đảo Quy Nhơn</span>
+          <h1>Thiết kế chuyến đi Quy Nhơn trong trẻo, gọn gàng và đáng nhớ</h1>
+          <p>QNT tư vấn tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn cho gia đình, nhóm bạn, công ty. Lịch trình rõ, xe đưa đón tận nơi, hỗ trợ nhanh qua hotline.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Gửi yêu cầu thiết kế tour</a>
+            <a class="btn btn-outline" href="tel:0772334449">Gọi 0772334449</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Thông tin nổi bật">
+          <h2>Chọn lịch trình theo nhu cầu, không cần tự ghép từng dịch vụ</h2>
+          <div class="hero-mini-grid">
+            <div class="hero-mini"><strong>1N</strong><span>Tour trong ngày</span></div>
+            <div class="hero-mini"><strong>2N1Đ</strong><span>Combo nghỉ dưỡng</span></div>
+            <div class="hero-mini"><strong>24/7</strong><span>Tư vấn nhanh</span></div>
+            <div class="hero-mini"><strong>Local</strong><span>Đội ngũ bản địa</span></div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section class="feature-strip" id="tour">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Vì sao chọn QNT</div>
+            <h2>Tour Quy Nhơn được tối ưu cho gia đình, nhóm bạn và đoàn công ty</h2>
+          </div>
+          <p>Trang đã được nâng cấp theo hướng giàu tương tác hơn: lọc tour, mở lịch trình, xem gallery phóng to và gửi yêu cầu tư vấn chi tiết.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon">01</div><h3>Lịch trình linh hoạt</h3><p>Tùy chỉnh giờ khởi hành, điểm đón, điểm ăn và thời gian chụp ảnh theo nhu cầu đoàn.</p></article>
+          <article class="feature-card"><div class="feature-icon">02</div><h3>Tư vấn nhanh</h3><p>Hotline 0772334449 hỗ trợ chọn tour, báo giá và giữ chỗ cho đoàn trong thời gian ngắn.</p></article>
+          <article class="feature-card"><div class="feature-icon">03</div><h3>Dịch vụ trọn gói</h3><p>Xe đưa đón, cano, vé tham quan, ăn uống và hướng dẫn viên được sắp xếp rõ ràng.</p></article>
+          <article class="feature-card"><div class="feature-icon">04</div><h3>Trải nghiệm bản địa</h3><p>Gợi ý góc chụp, món ăn và thời điểm đi đẹp từ đội ngũ am hiểu Quy Nhơn.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Tour nổi bật</div>
+            <h2>Chọn nhanh hành trình phù hợp với nhịp đi của đoàn</h2>
+          </div>
+          <p>Bấm vào nhóm tour để lọc nhanh. Mỗi thẻ tour giữ thông tin ngắn gọn để khách dễ so sánh trên điện thoại.</p>
+        </div>
+        <div class="tour-toolbar" aria-label="Lọc tour">
+          <button class="tour-filter active" type="button" data-filter="all">Tất cả</button>
+          <button class="tour-filter" type="button" data-filter="bien-dao">Biển đảo</button>
+          <button class="tour-filter" type="button" data-filter="gia-dinh">Gia đình</button>
+          <button class="tour-filter" type="button" data-filter="checkin">Check-in</button>
+        </div>
+        <div class="tour-grid">
+          <article class="tour-card" data-category="bien-dao gia-dinh">
+            <div class="tour-photo tile-kyco"><strong>Kỳ Co - Eo Gió</strong></div>
+            <div class="tour-body"><span class="tour-tag">Bán chạy</span><h3>Kỳ Co - Eo Gió 1 ngày</h3><p>Tắm biển, đi cano, check-in Eo Gió và thưởng thức hải sản trong hành trình gọn đẹp.</p><div class="tour-meta"><span>1 ngày</span><span>Cano</span><span>Ăn trưa</span></div></div>
+          </article>
+          <article class="tour-card" data-category="bien-dao gia-dinh">
+            <div class="tour-photo tile-honkh"><strong>Hòn Khô</strong></div>
+            <div class="tour-body"><span class="tour-tag">Biển đảo</span><h3>Hòn Khô - Lặn ngắm san hô</h3><p>Điểm đến trong xanh, phù hợp nhóm thích biển nhẹ nhàng, chụp ảnh và trải nghiệm san hô.</p><div class="tour-meta"><span>1 ngày</span><span>San hô</span><span>Gia đình</span></div></div>
+          </article>
+          <article class="tour-card" data-category="checkin">
+            <div class="tour-photo tile-eogio"><strong>Phú Yên</strong></div>
+            <div class="tour-body"><span class="tour-tag">Mở rộng</span><h3>Quy Nhơn - Phú Yên</h3><p>Gành Đá Đĩa, nhà thờ Mằng Lăng, Bãi Xép và các điểm check-in đặc trưng xứ Nẫu.</p><div class="tour-meta"><span>1 ngày</span><span>Xe riêng</span><span>Check-in</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="planner" id="planner">
+      <div class="container planner-layout">
+        <div class="planner-card">
+          <div class="section-kicker">Gợi ý hành trình</div>
+          <h3>Ba bước để chốt tour nhanh hơn</h3>
+          <p>QNT giúp khách hình dung chi phí, thời gian và trải nghiệm trước khi đặt, giảm việc hỏi qua lại quá nhiều.</p>
+          <ul class="planner-list">
+            <li><b>1</b><span><strong>Chọn nhóm khách</strong><br>Gia đình, bạn bè, công ty hoặc khách riêng.</span></li>
+            <li><b>2</b><span><strong>Chọn nhịp đi</strong><br>Đi nhẹ nhàng, nhiều ảnh, nhiều trải nghiệm hoặc nghỉ dưỡng.</span></li>
+            <li><b>3</b><span><strong>Nhận báo giá</strong><br>QNT gửi lịch trình phù hợp theo số khách và ngày đi.</span></li>
+          </ul>
+        </div>
+        <div class="planner-card">
+          <div class="section-kicker">Gợi ý nhanh</div>
+          <h3>Khách hay chọn</h3>
+          <div class="price-list">
+            <div class="include"><strong>Gia đình có trẻ nhỏ</strong><span>Kỳ Co - Eo Gió, giờ đi nhẹ, ưu tiên ăn uống và nghỉ ngơi.</span></div>
+            <div class="include"><strong>Nhóm bạn thích ảnh</strong><span>Eo Gió, Hòn Khô, Phú Yên, thêm điểm check-in theo ánh sáng đẹp.</span></div>
+            <div class="include"><strong>Đoàn công ty</strong><span>Tour riêng, điều phối xe, ăn uống, teambuilding hoặc gala dinner.</span></div>
+            <div class="include"><strong>Khách lần đầu đến Quy Nhơn</strong><span>Lịch trình cân bằng giữa biển đảo, món địa phương và city tour.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Điểm đến</div>
+            <h2>Gallery có thể bấm để phóng to và chuyển ảnh</h2>
+          </div>
+          <p>Bấm vào từng ảnh, dùng mũi tên để chuyển qua lại. Bấm ra khoảng trống hoặc nút đóng để tắt ảnh.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item large tile-kyco" type="button" data-title="Kỳ Co" data-desc="Bãi biển xanh, cát sáng và các góc chụp nổi bật của tour biển đảo Quy Nhơn."><strong>Kỳ Co</strong><span>Bãi biển trong xanh</span></button>
+          <button class="gallery-item wide tile-eogio" type="button" data-title="Eo Gió" data-desc="Cung đường ven biển, vách đá và điểm ngắm gió đặc trưng của Nhơn Lý."><strong>Eo Gió</strong><span>Đường ven biển</span></button>
+          <button class="gallery-item small tile-honkh" type="button" data-title="Hòn Khô" data-desc="Không gian biển đảo nhẹ nhàng, phù hợp gia đình và nhóm thích lặn ngắm san hô."><strong>Hòn Khô</strong><span>San hô</span></button>
+          <button class="gallery-item mid tile-thapdoi" type="button" data-title="Tháp Đôi" data-desc="Điểm dừng văn hóa trong city tour Quy Nhơn, dễ kết hợp với lịch trình nửa ngày."><strong>Tháp Đôi</strong><span>Văn hóa Chăm</span></button>
+          <button class="gallery-item mid tile-trungluong" type="button" data-title="Trung Lương" data-desc="Không gian biển, cắm trại và các điểm chụp ảnh phù hợp nhóm bạn."><strong>Trung Lương</strong><span>Dã ngoại</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="itinerary">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Lịch trình mẫu</div>
+            <h2>Một ngày trọn vẹn: biển xanh, hải sản và điểm check-in đặc trưng</h2>
+          </div>
+          <p>Bấm từng buổi để mở hoặc thu gọn lịch trình. Có thể rút gọn hoặc mở rộng thành combo 2 ngày 1 đêm.</p>
+        </div>
+        <div class="timeline">
+          <article class="accordion open">
+            <button class="accordion-toggle" type="button"><b>01</b><span><strong>Đón khách - Khởi hành đi Nhơn Lý</strong><span>Xe đón tại khách sạn hoặc điểm hẹn trong trung tâm Quy Nhơn.</span></span><i class="accordion-icon">−</i></button>
+            <div class="accordion-panel"><ul><li>Di chuyển đến bến cano, nghe phổ biến lịch trình.</li><li>Chuẩn bị đồ biển, áo phao và các lưu ý an toàn.</li></ul><div class="mini-photo tile-eogio"></div></div>
+          </article>
+          <article class="accordion">
+            <button class="accordion-toggle" type="button"><b>02</b><span><strong>Kỳ Co - Tắm biển - Chụp ảnh</strong><span>Đi cano ra Kỳ Co, tự do tắm biển và chụp ảnh tại bãi cát sáng.</span></span><i class="accordion-icon">+</i></button>
+            <div class="accordion-panel"><ul><li>Trải nghiệm cano, biển xanh và các góc ảnh đặc trưng.</li><li>Lặn ngắm san hô tùy điều kiện thời tiết và gói tour.</li></ul><div class="mini-photo tile-kyco"></div></div>
+          </article>
+          <article class="accordion">
+            <button class="accordion-toggle" type="button"><b>03</b><span><strong>Ăn trưa hải sản - Eo Gió - Trả khách</strong><span>Dùng bữa trưa địa phương, nghỉ ngơi và check-in Eo Gió.</span></span><i class="accordion-icon">+</i></button>
+            <div class="accordion-panel"><ul><li>Gợi ý thực đơn hải sản theo ngân sách và số khách.</li><li>Kết thúc tour và đưa khách về điểm hẹn ban đầu.</li></ul><div class="mini-photo tile-honkh"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-section" id="price">
+      <div class="container">
+        <div class="pricing-wrap">
+          <div class="price-card">
+            <div class="section-kicker" style="color:#E9C46A">Bảng giá tham khảo</div>
+            <h2>Giá tour linh hoạt theo số lượng khách và ngày khởi hành</h2>
+            <div class="price">Liên hệ</div>
+            <p>Gọi 0772334449 để nhận báo giá chính xác cho đoàn khách, tour riêng, tour ghép hoặc combo khách sạn.</p>
+            <div class="hero-actions"><a class="btn" href="tel:0772334449">Gọi nhận giá</a><a class="btn btn-outline" href="#contact">Gửi yêu cầu</a></div>
+          </div>
+          <div class="price-list">
+            <div class="include"><strong>Xe đưa đón</strong><span>Đón trả theo điểm hẹn trong nội thành Quy Nhơn.</span></div>
+            <div class="include"><strong>Vé tham quan</strong><span>Hỗ trợ đặt vé theo chương trình tour thực tế.</span></div>
+            <div class="include"><strong>Ăn uống</strong><span>Gợi ý thực đơn hải sản, món địa phương và suất ăn đoàn.</span></div>
+            <div class="include"><strong>HDV / Điều phối</strong><span>Hỗ trợ đoàn trong suốt quá trình di chuyển và tham quan.</span></div>
+            <div class="include"><strong>Cano / biển đảo</strong><span>Sắp xếp phương tiện theo thời tiết và lịch tàu.</span></div>
+            <div class="include"><strong>Tour riêng</strong><span>Thiết kế lịch trình theo ngân sách và thời gian của đoàn.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <form class="contact-shell" action="#" method="post">
+          <div class="form-section-title">Thông tin liên hệ</div>
+          <div class="form-grid">
+            <div class="field"><label for="name">Họ và tên <span>*</span></label><input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required></div>
+            <div class="field"><label for="phone">Số điện thoại <span>*</span></label><input id="phone" name="phone" type="tel" placeholder="0901 234 567" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="email@example.com"></div>
+            <div class="field"><label for="company">Công ty / tổ chức</label><input id="company" name="company" type="text" placeholder="Tên công ty (nếu có)"></div>
+          </div>
+          <div class="form-section-title">Thông tin hành trình</div>
+          <div class="form-grid">
+            <div class="field"><label for="group">Loại nhóm</label><select id="group" name="group"><option>Chọn loại nhóm</option><option>Gia đình</option><option>Nhóm bạn</option><option>Công ty</option><option>Khách riêng</option></select></div>
+            <div class="field"><label for="guests">Số lượng người <span>*</span></label><input id="guests" name="guests" type="number" min="1" placeholder="Ví dụ: 50" required></div>
+            <div class="field"><label for="destination">Điểm đến mong muốn</label><input id="destination" name="destination" type="text" placeholder="Kỳ Co, Eo Gió, Hòn Khô..."></div>
+            <div class="field"><label for="date">Ngày khởi hành dự kiến</label><input id="date" name="date" type="date"></div>
+            <div class="field"><label for="duration">Thời gian tour</label><select id="duration" name="duration"><option>Chọn độ dài</option><option>Trong ngày</option><option>2 ngày 1 đêm</option><option>3 ngày 2 đêm</option><option>Theo yêu cầu</option></select></div>
+            <div class="field"><label for="budget">Ngân sách (VNĐ/người)</label><select id="budget" name="budget"><option>Chọn ngân sách</option><option>Dưới 800.000</option><option>800.000 - 1.500.000</option><option>1.500.000 - 3.000.000</option><option>Trên 3.000.000</option></select></div>
+          </div>
+          <div class="form-section-title">Loại hình quan tâm</div>
+          <div class="interest-grid">
+            <label class="interest"><input type="checkbox" name="interest" value="nghi-duong"><span>Nghỉ dưỡng</span></label>
+            <label class="interest"><input type="checkbox" name="interest" value="phieu-luu"><span>Phiêu lưu</span></label>
+            <label class="interest"><input type="checkbox" name="interest" value="van-hoa"><span>Văn hóa</span></label>
+            <label class="interest"><input type="checkbox" name="interest" value="mua-sam"><span>Mua sắm</span></label>
+            <label class="interest"><input type="checkbox" name="interest" value="teambuilding"><span>Teambuilding</span></label>
+            <label class="interest"><input type="checkbox" name="interest" value="gala"><span>Gala Dinner</span></label>
+          </div>
+          <div class="form-section-title">Ghi chú thêm</div>
+          <div class="field full"><textarea id="message" name="message" placeholder="Yêu cầu đặc biệt, sở thích ăn uống, cần hướng dẫn viên ngoại ngữ..."></textarea></div>
+          <button class="btn form-submit" type="submit">Gửi yêu cầu thiết kế tour →</button>
+          <p class="form-note">Chúng tôi sẽ phản hồi trong vòng 24 giờ làm việc.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">QNT</div>
+        <p>QNT:Quy Nhơn Tour - Chuyên tổ chức tour Quy Nhơn, tour biển đảo và lịch trình riêng cho gia đình, nhóm bạn, doanh nghiệp.</p>
+        <div class="socials"><a href="#" aria-label="Facebook">f</a><a href="tel:0772334449" aria-label="Điện thoại">☎</a><a href="https://zalo.me/0772334449" aria-label="Zalo">Z</a></div>
+      </div>
+      <div><h3>Tour biển đảo</h3><ul><li><a href="#tour">Kỳ Co - Eo Gió</a></li><li><a href="#tour">Hòn Khô</a></li><li><a href="#tour">Cù Lao Xanh</a></li><li><a href="#tour">Phú Yên</a></li></ul></div>
+      <div><h3>Khám phá thêm</h3><ul><li><a href="#planner">Tour thiết kế riêng</a></li><li><a href="#gallery">Điểm đến</a></li><li><a href="#price">Bảng giá</a></li><li><a href="#contact">Liên hệ tư vấn</a></li></ul></div>
+      <div class="contact-lines"><h3>Liên hệ</h3><ul><li><strong>QNT:Quy Nhơn Tour</strong></li><li>MST: đang cập nhật</li><li><a href="tel:0772334449">0772334449</a></li><li><a href="mailto:info@qntquynhontour.vn">info@qntquynhontour.vn</a></li><li>50 Trần Hưng Đạo, Quy Nhơn</li><li>T2-CN: 8:00 - 20:00</li></ul></div>
+      <div class="photo-credit">Ảnh điểm đến lấy từ Wikimedia Commons. Thông tin tác giả và giấy phép nằm trong <a href="assets/photos/sources.json">assets/photos/sources.json</a>.</div>
+    </div>
+  </footer>
+
+  <div class="float-actions" aria-label="Liên hệ nhanh">
+    <a class="float-btn" href="tel:0772334449"><span class="float-icon">☎</span><span>Gọi ngay</span></a>
+    <a class="float-btn zalo" href="https://zalo.me/0772334449" target="_blank" rel="noopener"><span class="float-icon">💬</span><span>Zalo</span></a>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Đóng ảnh">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Ảnh trước">‹</button>
+    <div class="lightbox-stage" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+      <div class="lightbox-title"></div>
+      <p class="lightbox-desc"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Ảnh sau">›</button>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector(".menu-btn");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const filters = document.querySelectorAll(".tour-filter");
+    const tours = document.querySelectorAll(".tour-card");
+    filters.forEach((button) => {
+      button.addEventListener("click", () => {
+        filters.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        const filter = button.dataset.filter;
+        tours.forEach((tour) => {
+          tour.hidden = filter !== "all" && !tour.dataset.category.includes(filter);
+        });
+      });
+    });
+
+    document.querySelectorAll(".accordion-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const item = toggle.closest(".accordion");
+        item.classList.toggle("open");
+        toggle.querySelector(".accordion-icon").textContent = item.classList.contains("open") ? "−" : "+";
+      });
+    });
+
+    const galleryItems = [...document.querySelectorAll(".gallery-item")];
+    const lightbox = document.querySelector("#lightbox");
+    const stage = lightbox.querySelector(".lightbox-stage");
+    const title = lightbox.querySelector(".lightbox-title");
+    const desc = lightbox.querySelector(".lightbox-desc");
+    let activeImage = 0;
+
+    function showImage(index) {
+      activeImage = (index + galleryItems.length) % galleryItems.length;
+      const item = galleryItems[activeImage];
+      stage.className = "lightbox-stage " + [...item.classList].filter((name) => name.startsWith("tile-")).join(" ");
+      title.textContent = item.dataset.title;
+      desc.textContent = item.dataset.desc;
+    }
+    function openLightbox(index) {
+      showImage(index);
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+    galleryItems.forEach((item, index) => item.addEventListener("click", () => openLightbox(index)));
+    lightbox.querySelector(".lightbox-prev").addEventListener("click", (event) => { event.stopPropagation(); showImage(activeImage - 1); });
+    lightbox.querySelector(".lightbox-next").addEventListener("click", (event) => { event.stopPropagation(); showImage(activeImage + 1); });
+    lightbox.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => { if (event.target === lightbox) closeLightbox(); });
+    window.addEventListener("keydown", (event) => {
+      if (!lightbox.classList.contains("open")) return;
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") showImage(activeImage - 1);
+      if (event.key === "ArrowRight") showImage(activeImage + 1);
+    });
+  </script>
+</body>
+</html>
