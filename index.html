@@ -14,18 +14,18 @@
   <meta property="og:title" content="QNT:Quy Nhơn Tour | Tour Quy Nhơn biển đảo">
   <meta property="og:description" content="Tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn. Tư vấn nhanh qua hotline 0772334449.">
   <meta property="og:url" content="https://jigo08.github.io/tourquynhon/">
-  <meta property="og:image" content="https://jigo08.github.io/tourquynhon/assets/og-preview.png">
-  <meta property="og:image:url" content="https://jigo08.github.io/tourquynhon/assets/og-preview.png">
-  <meta property="og:image:secure_url" content="https://jigo08.github.io/tourquynhon/assets/og-preview.png">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image" content="https://jigo08.github.io/tourquynhon/assets/hero-og.jpg">
+  <meta property="og:image:url" content="https://jigo08.github.io/tourquynhon/assets/hero-og.jpg">
+  <meta property="og:image:secure_url" content="https://jigo08.github.io/tourquynhon/assets/hero-og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="QNT:Quy Nhơn Tour - tour Quy Nhơn biển đảo">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="QNT:Quy Nhơn Tour | Tour Quy Nhơn biển đảo">
   <meta name="twitter:description" content="Tour Kỳ Co, Eo Gió, Hòn Khô, Phú Yên và city tour Quy Nhơn. Tư vấn nhanh qua hotline 0772334449.">
-  <meta name="twitter:image" content="https://jigo08.github.io/tourquynhon/assets/og-preview.png">
-  <meta itemprop="image" content="https://jigo08.github.io/tourquynhon/assets/og-preview.png">
+  <meta name="twitter:image" content="https://jigo08.github.io/tourquynhon/assets/hero-og.jpg">
+  <meta itemprop="image" content="https://jigo08.github.io/tourquynhon/assets/hero-og.jpg">
   <link rel="preload" as="image" href="assets/photos/ky-co.jpg">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -504,6 +504,26 @@
     .gallery-item strong { font-size: 22px; line-height: 1.1; }
     .gallery-item span { color: rgba(255,255,255,.86); font-size: 13px; font-weight: 800; }
 
+    .real-journey {
+      background: linear-gradient(180deg, var(--white), rgba(242, 232, 201, .42));
+    }
+    .real-journey .section-head {
+      grid-template-columns: minmax(0, .82fr) minmax(280px, .52fr);
+    }
+    .real-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 220px;
+      gap: 14px;
+    }
+    .real-grid .gallery-item {
+      grid-column: span 3;
+      min-height: 220px;
+    }
+    .real-grid .gallery-item:nth-child(-n+3) {
+      grid-column: span 4;
+    }
+
     .itinerary { background: rgba(162, 210, 255, .18); }
     .timeline { display: grid; gap: 12px; }
     .accordion {
@@ -737,14 +757,6 @@
     }
     .contact-lines strong { color: var(--white); }
     .contact-lines a { color: var(--gold); font-weight: 850; }
-    .photo-credit {
-      grid-column: 1 / -1;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255, 255, 255, .18);
-      font-size: 12px;
-    }
-    .photo-credit a { color: var(--gold); font-weight: 850; }
-
     .float-actions {
       position: fixed;
       left: 18px;
@@ -839,6 +851,17 @@
       .feature-grid, .tour-grid { grid-template-columns: repeat(2, 1fr); }
       .gallery-grid { grid-auto-rows: 160px; }
       .gallery-item.large, .gallery-item.wide, .gallery-item.small, .gallery-item.mid { grid-column: span 6; }
+      .real-grid { grid-auto-rows: 180px; }
+      .real-grid .gallery-item,
+      .real-grid .gallery-item:nth-child(1),
+      .real-grid .gallery-item:nth-child(2),
+      .real-grid .gallery-item:nth-child(3) {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+      .real-grid .gallery-item:last-child:nth-child(odd) {
+        grid-column: span 12;
+      }
       .accordion-panel { grid-template-columns: 1fr; padding-left: 20px; }
     }
     @media (max-width: 680px) {
@@ -854,6 +877,12 @@
       .field.full { grid-column: auto; }
       .contact-shell { padding: 24px 18px; border-radius: 14px; }
       .gallery-item.large, .gallery-item.wide, .gallery-item.small, .gallery-item.mid { grid-column: span 12; }
+      .real-grid .gallery-item,
+      .real-grid .gallery-item:nth-child(1),
+      .real-grid .gallery-item:nth-child(2),
+      .real-grid .gallery-item:nth-child(3) {
+        grid-column: span 12;
+      }
       .accordion-toggle { grid-template-columns: 72px 1fr 28px; padding: 14px; }
       .accordion-toggle b { min-height: 62px; }
       .accordion-panel { padding: 0 14px 16px; }
@@ -1003,7 +1032,7 @@
         <div class="section-head">
           <div>
             <div class="section-kicker">Điểm đến</div>
-            <h2>Gallery có thể bấm để phóng to và chuyển ảnh</h2>
+            <h2>Khoảnh khắc Quy Nhơn nổi bật</h2>
           </div>
         </div>
         <div class="gallery-grid">
@@ -1012,6 +1041,30 @@
           <button class="gallery-item small tile-honkh" type="button" data-title="Hòn Khô" data-desc="Không gian biển đảo nhẹ nhàng, phù hợp gia đình và nhóm thích lặn ngắm san hô."><strong>Hòn Khô</strong><span>San hô</span></button>
           <button class="gallery-item mid tile-thapdoi" type="button" data-title="Tháp Đôi" data-desc="Điểm dừng văn hóa trong city tour Quy Nhơn, dễ kết hợp với lịch trình nửa ngày."><strong>Tháp Đôi</strong><span>Văn hóa Chăm</span></button>
           <button class="gallery-item mid tile-trungluong" type="button" data-title="Trung Lương" data-desc="Không gian biển, cắm trại và các điểm chụp ảnh phù hợp nhóm bạn."><strong>Trung Lương</strong><span>Dã ngoại</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="real-journey" id="hanh-trinh-thuc-te">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Hành trình thực tế</div>
+            <h2>Những khung hình từ các chuyến đi gần đây</h2>
+          </div>
+        </div>
+        <div class="real-grid">
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.52), rgba(0,168,150,.14)), url('assets/photos/ky-co-thuc-te (1).jpg')" data-image="assets/photos/ky-co-thuc-te%20(1).jpg" data-title="Kỳ Co thực tế" data-desc="Khoảnh khắc trong hành trình Kỳ Co của khách QNT."><strong>Kỳ Co</strong><span>Hành trình thực tế</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(0,168,150,.12)), url('assets/photos/ky-co-thuc-te (2).jpg')" data-image="assets/photos/ky-co-thuc-te%20(2).jpg" data-title="Kỳ Co thực tế" data-desc="Không gian biển xanh và trải nghiệm trong tour Kỳ Co."><strong>Kỳ Co</strong><span>Biển xanh</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(42,157,143,.15)), url('assets/photos/eo-gio-thuc-te.jpg')" data-image="assets/photos/eo-gio-thuc-te.jpg" data-title="Eo Gió thực tế" data-desc="Khung cảnh Eo Gió trong hành trình thực tế của QNT."><strong>Eo Gió</strong><span>Ven biển</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(0,168,150,.14)), url('assets/photos/eo-gio-thuc-te.png')" data-image="assets/photos/eo-gio-thuc-te.png" data-title="Eo Gió thực tế" data-desc="Một góc ảnh thực tế tại Eo Gió."><strong>Eo Gió</strong><span>Check-in</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.48), rgba(42,157,143,.16)), url('assets/photos/ky-co-thuc-te (1).png')" data-image="assets/photos/ky-co-thuc-te%20(1).png" data-title="Kỳ Co thực tế" data-desc="Một góc ghi lại trải nghiệm thực tế trong chuyến đi."><strong>Kỳ Co</strong><span>Check-in</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(0,168,150,.14)), url('assets/photos/hon-seo-thuc-te (1).jpg')" data-image="assets/photos/hon-seo-thuc-te%20(1).jpg" data-title="Hòn Sẹo thực tế" data-desc="Cảnh biển và điểm dừng trong hành trình Hòn Sẹo."><strong>Hòn Sẹo</strong><span>Biển đảo</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(0,168,150,.14)), url('assets/photos/hon-seo-thuc-te (2).jpg')" data-image="assets/photos/hon-seo-thuc-te%20(2).jpg" data-title="Hòn Sẹo thực tế" data-desc="Một lát cắt nhẹ nhàng của tour biển đảo Quy Nhơn."><strong>Hòn Sẹo</strong><span>Trải nghiệm</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.52), rgba(42,157,143,.16)), url('assets/photos/hon-seo-thuc-te (3).jpg')" data-image="assets/photos/hon-seo-thuc-te%20(3).jpg" data-title="Hòn Sẹo thực tế" data-desc="Ảnh thực tế từ chuyến đi Hòn Sẹo."><strong>Hòn Sẹo</strong><span>Trong ngày</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.48), rgba(0,168,150,.15)), url('assets/photos/Chua-Ong-Nui-thuc-te (1).jpg')" data-image="assets/photos/Chua-Ong-Nui-thuc-te%20(1).jpg" data-title="Chùa Ông Núi thực tế" data-desc="Điểm dừng văn hóa trong hành trình khám phá Bình Định."><strong>Chùa Ông Núi</strong><span>Văn hóa</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.48), rgba(42,157,143,.16)), url('assets/photos/Chua-Ong-Nui-thuc-te (2).jpg')" data-image="assets/photos/Chua-Ong-Nui-thuc-te%20(2).jpg" data-title="Chùa Ông Núi thực tế" data-desc="Không gian thanh tĩnh cho lịch trình kết hợp tham quan."><strong>Chùa Ông Núi</strong><span>Tham quan</span></button>
+          <button class="gallery-item" type="button" style="--tile-bg: linear-gradient(0deg, rgba(0,119,182,.5), rgba(0,168,150,.14)), url('assets/photos/Chua-Ong-Nui-thuc-te (3).jpg')" data-image="assets/photos/Chua-Ong-Nui-thuc-te%20(3).jpg" data-title="Chùa Ông Núi thực tế" data-desc="Một góc ảnh thực tế trong chuyến tham quan Chùa Ông Núi."><strong>Chùa Ông Núi</strong><span>Góc ảnh</span></button>
         </div>
       </div>
     </section>
@@ -1110,7 +1163,6 @@
       <div><h3>Tour biển đảo</h3><ul><li><a href="#tour">Kỳ Co - Eo Gió</a></li><li><a href="#tour">Hòn Khô</a></li><li><a href="#tour">Cù Lao Xanh</a></li><li><a href="#tour">Phú Yên</a></li></ul></div>
       <div><h3>Khám phá thêm</h3><ul><li><a href="#planner">Tour thiết kế riêng</a></li><li><a href="#gallery">Điểm đến</a></li><li><a href="#price">Bảng giá</a></li><li><a href="#contact">Liên hệ tư vấn</a></li></ul></div>
       <div class="contact-lines"><h3>Liên hệ</h3><ul><li><strong>QNT:Quy Nhơn Tour</strong></li><li>MST: đang cập nhật</li><li><a href="tel:0772334449">0772334449</a></li><li><a href="mailto:info@qntquynhontour.vn">info@qntquynhontour.vn</a></li><li>50 Trần Hưng Đạo, Quy Nhơn</li><li>T2-CN: 8:00 - 20:00</li></ul></div>
-      <div class="photo-credit">Ảnh điểm đến lấy từ Wikimedia Commons. Thông tin tác giả và giấy phép nằm trong <a href="assets/photos/sources.json">assets/photos/sources.json</a>.</div>
     </div>
   </footer>
 
@@ -1174,7 +1226,13 @@
     function showImage(index) {
       activeImage = (index + galleryItems.length) % galleryItems.length;
       const item = galleryItems[activeImage];
-      stage.className = "lightbox-stage " + [...item.classList].filter((name) => name.startsWith("tile-")).join(" ");
+      const tileClasses = [...item.classList].filter((name) => name.startsWith("tile-")).join(" ");
+      stage.className = "lightbox-stage " + tileClasses;
+      if (item.dataset.image) {
+        stage.style.backgroundImage = `linear-gradient(0deg, rgba(0,119,182,.52), rgba(0,168,150,.12)), url("${item.dataset.image}")`;
+      } else {
+        stage.style.backgroundImage = "";
+      }
       title.textContent = item.dataset.title;
       desc.textContent = item.dataset.desc;
     }
